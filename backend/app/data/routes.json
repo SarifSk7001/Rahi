@@ -1,0 +1,35 @@
+[
+  {
+    "route_id": "A",
+    "name": "Direct Highway Walk (Shortest)",
+    "distance_km": 2.0,
+    "time_min": 20,
+    "heat_level": "High",
+    "shade_percent": 12,
+    "traffic_level": "High",
+    "water_points": 0,
+    "has_emergency_facility": false
+  },
+  {
+    "route_id": "B",
+    "name": "Green Canopy Boulevard (Cool & Safe)",
+    "distance_km": 2.3,
+    "time_min": 24,
+    "heat_level": "Low",
+    "shade_percent": 68,
+    "traffic_level": "Low",
+    "water_points": 2,
+    "has_emergency_facility": true
+  },
+  {
+    "route_id": "C",
+    "name": "Parkside Promenade",
+    "distance_km": 2.5,
+    "time_min": 26,
+    "heat_level": "Medium",
+    "shade_percent": 50,
+    "traffic_level": "Low",
+    "water_points": 1,
+    "has_emergency_facility": false
+  }
+]
