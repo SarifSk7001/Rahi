@@ -1,0 +1,82 @@
+/* Uses the design tokens from App.css (.app). Fallbacks keep it usable elsewhere. */
+
+.mode-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border, #d5e2dd);
+  border-radius: 999px;
+  background: var(--surface, #ffffff);
+  color: var(--text-h, #0f2e29);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.mode-btn:hover:not(.active) {
+  border-color: var(--accent, #0f766e);
+  background: var(--accent-bg, #e4f3ef);
+}
+
+.mode-btn.active {
+  background: var(--accent, #0f766e);
+  border-color: var(--accent, #0f766e);
+  color: var(--on-accent, #ffffff);
+}
+
+.mode-btn:focus-visible {
+  outline: 3px solid var(--sun, #f59e0b);
+  outline-offset: 2px;
+}
+
+.car-card {
+  background: var(--surface, #ffffff);
+  border: 1px solid var(--border, #d5e2dd);
+  border-left: 4px solid var(--sun, #f59e0b);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin: 12px 0;
+  box-shadow: var(--shadow, none);
+}
+
+.car-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.car-badge {
+  font-weight: 700;
+  color: var(--accent, #0f766e);
+}
+
+.car-card-head strong {
+  font-family: 'Bricolage Grotesque', 'Figtree', sans-serif;
+  font-size: 1.3rem;
+  color: var(--text-h, #0f2e29);
+}
+
+.car-meta {
+  margin: 4px 0 6px;
+  color: var(--text, #4d6963);
+  font-size: 0.9rem;
+}
+
+/* Live-traffic delay (shown when the TomTom route reports a delay) */
+.car-delay {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mode-btn {
+    transition: none;
+  }
+}

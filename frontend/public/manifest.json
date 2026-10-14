@@ -1,0 +1,16 @@
+{
+  "name": "RAAHI — Safety Navigation",
+  "short_name": "RAAHI",
+  "description": "Heat-aware, night-safe pedestrian navigation for Indian cities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c2b27",
+  "theme_color": "#0f766e",
+  "orientation": "any",
+  "icons": [
+    { "src": "/logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "categories": ["navigation", "travel", "utilities"],
+  "lang": "en-IN"
+}
